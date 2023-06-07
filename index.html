@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<header> 
+    <h1>SUDOKU</h1>
+    <div id="setup-game">
+        
+        <div id="time">
+            <h3>choose time: </h3>
+            <!-- checked is to set default time 3 min -->
+            <label><input id="time1" type="radio" value="three" name="diff" checked>3 min</label> 
+            <label><input id="time2"  type="radio" value="five" name="diff" >5 min</label>     
+        </div>
+        <div id="theme" >
+            <h3>choose theme: </h3>
+            <label><input id="theme1" type="radio" name="theme" value="light" checked >light</label>
+            <label><input id="theme2" type="radio" name="theme" value="dark">dark</label>
+        </div>
+        
+    </div>
+    <button>new game!</button> 
+</header>
+<!-- body class="dark" handled by javascript -->
+<body>
+    <div>
+        <p id="timer"></p>
+        <p id="score"></p>
+    </div>
+    <div id="game">
+        <div id="board" ></div>
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+    
+    
+</body>
+<footer></footer>
+</html>
